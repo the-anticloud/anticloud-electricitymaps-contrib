@@ -1,0 +1,9 @@
+# AIOSS ledger v1
+# project: CARBON_CAPTURE/ELECTRICITYMAPS_CONTRIB
+# records: 5
+# head: 9262dbb712001b9a66421f280d38a438d88136818b40f30e545e0f377df7a40e
+{"digest": "00240228f7565e3929cfccef557c44e4904e61f7d0a171a73d51b38118e0c050", "kind": "bench-report", "path": "BENCH.json", "payload_sha3": "55e87e2a79af73602cf8753983b52ea4cd6ef10d4c1c35eebc7a371896f58416", "prev": "5a5a9db5fb708ae61804306200e7a9e31853dde596c5f14d2303d4349fe14b2d", "seq": 0, "ts": "2026-10-09T05:52:33Z"}
+{"digest": "d999b3d18a103c7b95fad43f7b04f708e167e4f3075a7de575b2b35f48079ee6", "kind": "result-register", "path": "ISOLATED_LAB_RESULTS/03_Result_Register.md", "payload_sha3": "2e35198070a6051b201818976647fbc68087ee869d8740d44908bf9299a518c2", "prev": "00240228f7565e3929cfccef557c44e4904e61f7d0a171a73d51b38118e0c050", "seq": 1, "ts": "2026-10-09T05:52:33Z"}
+{"digest": "b06b0f9879e7037eb50cc6feae19d5f046be0261e483a0b714cfc891262d442f", "kind": "readme", "path": "README.md", "payload_sha3": "5c699766424039720b5ef0cd467474b1a8fc32e11b4ecacabde79e447041bee6", "prev": "d999b3d18a103c7b95fad43f7b04f708e167e4f3075a7de575b2b35f48079ee6", "seq": 2, "ts": "2026-10-09T05:52:33Z"}
+{"digest": "40fc54c2972de203ebb86523342a4363ae59c20ea22f8f6a7c3462f433ea8040", "kind": "licence", "path": "ANTICOMMONS_LICENSE.md", "payload_sha3": "9f56db11846ccaaf5bdf251c0dd024f35d920e0fd7bccceb801b105a385d6c17", "prev": "b06b0f9879e7037eb50cc6feae19d5f046be0261e483a0b714cfc891262d442f", "seq": 3, "ts": "2026-10-09T05:52:33Z"}
+{"digest": "9262dbb712001b9a66421f280d38a438d88136818b40f30e545e0f377df7a40e", "kind": "notice", "path": "NOTICE", "payload_sha3": "843ad2aa1f66dd7c365053da539216b33de9ae70bb42dd13667559406276e1b5", "prev": "40fc54c2972de203ebb86523342a4363ae59c20ea22f8f6a7c3462f433ea8040", "seq": 4, "ts": "2026-10-09T05:52:33Z"}
