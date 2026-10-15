@@ -1,288 +1,73 @@
 # ELECTRICITYMAPS_CONTRIB
 
-**Category:** CARBON_CAPTURE
-**Status:** Active development with Anticloud overlay
+> Anticloud offline package — upstream: electricitymaps/electricitymaps-contrib @ `master`.
 
 ## What This Project Does
 
-ELECTRICITYMAPS_CONTRIB is an open-source project in the CARBON_CAPTURE category.
+The open source repository for Electricity Maps data parsers that powers the world's most comprehensive electricity data platform
 
-This project provides tools, libraries, and functionality for developers
-and end users working in the CARBON_CAPTURE domain. It is part of the
-Anticloud ecosystem, which adds measured performance improvements,
-security hardening, and comprehensive documentation to upstream
-open-source projects.
+**Topics:** app, climate-change, data-visualization, electricity, electricity-consumption, electricity-prices, electricitymap, electricitymaps, hacktoberfest, map, sustainability
 
-The project addresses key challenges in CARBON_CAPTURE by providing:
+## Upstream README
 
-- A well-tested, community-driven codebase
-- Standard interfaces compatible with the broader ecosystem
-- Documentation and examples for common use cases
-- Integration points for the Anticloud overlay improvements
+<p align="center">
+  <a href="https://app.electricitymaps.com">
+    <picture>
+      <source
+        srcset="https://raw.githubusercontent.com/electricitymaps/electricitymaps-contrib/master/.github/images/electricity-maps-logo-dark.svg"
+        media="(prefers-color-scheme: dark)"/>
+      <img
+        alt="Electricity Maps"
+        src="https://raw.githubusercontent.com/electricitymaps/electricitymaps-contrib/master/.github/images/electricity-maps-logo.svg"
+        width="100"/>
+    </picture>
+  </a>
+</p>
+<h1 align="center">
+  Electricity Maps
+</h1>
 
-## Installation
+<p align="center">
+A collection of parsers to collect and standardize electricity data such as production, exchanges and price from across the globe.<br>
+  <strong><a href="https://app.electricitymaps.com">app.electricitymaps.com »</a></strong>
+</p>
 
-### Prerequisites
+<p align="center">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/electricitymaps/electricitymaps-contrib"/>
+    <a href="https://github.com/electricitymaps/electricitymaps-contrib/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/electricitymaps/electricitymaps-contrib" alt="Electricity Maps is released under the GNU-AGPLv3 license." /></a>
+</p>
 
-Before installing ELECTRICITYMAPS_CONTRIB, ensure you have the following:
+![image](.github/images/electricity-maps-banner.png#gh-light-mode-only)
+![image](.github/images/electricity-maps-banner-dark.png#gh-dark-mode-only)
 
-- A compatible operating system (Linux, macOS, or Windows)
-- Required build tools as specified by the upstream project
-- Runtime dependencies per the upstream requirements
+## Introduction
 
-### From Source
+This project aims to provide a free, open-source, and transparent way to collect electricity data.
 
-To build from source, source the project and follow the
-upstream build instructions:
+We fetch the raw data from public, free, and official sources. They include official government and transmission system operators' data. This data powers the [Electricity Maps platform](https://electricitymaps.com), which includes [our flow-tracing algorithm](https://www.electricitymaps.com/blog/flow-tracing), estimation models, forecast engine and much more.
 
-```bash
-git source https://github.com/electricitymaps/electricitymaps-contrib/electricitymaps-contrib.git
-cd electricitymaps-contrib
-# Follow upstream build system (Makefile, CMake, setup.py, etc.)
-make
-sudo make install
-```
-
-### Package Managers
-
-Depending on your platform, ELECTRICITYMAPS_CONTRIB may be available
-through package managers such as apt, brew, or pip. Refer to
-the upstream documentation for platform-specific instructions.
-
-## Usage
-
-### Basic Usage
-
-After installation, ELECTRICITYMAPS_CONTRIB can be invoked as follows:
-
-```bash
-# Display help and available options
-electricitymaps-contrib --help
-
-# Run with default configuration
-electricitymaps-contrib
-`
-
-### Common Operations
-
-The following are common operations for ELECTRICITYMAPS_CONTRIB:
-
-1. **Initialization** - Set up the project environment and configuration
-2. **Execution** - Run the main functionality with appropriate parameters
-3. **Monitoring** - Check status and output during operation
-4. **Shutdown** - Cleanly terminate and save state
-
-### Examples
-
-```bash
-# Example 1: Basic invocation
-electricitymaps-contrib --input /path/to/input --output /path/to/output
-
-# Example 2: With custom configuration
-electricitymaps-contrib --config /path/to/config.yaml
-
-# Example 3: Verbose mode for debugging
-electricitymaps-contrib --verbose --log-level debug
-`
-
-## API
-
-### Overview
-
-ELECTRICITYMAPS_CONTRIB exposes a standard API consistent with its category.
-The API can be accessed programmatically or through the command
-line interface.
-
-### Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /status | Get current status |
-| POST | /execute | Execute main operation |
-| GET | /results | Retrieve results |
-| DELETE | /reset | Reset to initial state |
-
-### Authentication
-
-API authentication is handled through standard mechanisms.
-Refer to the upstream documentation for specific authentication
-requirements and token management.
-
-### Rate Limiting
-
-The API implements rate limiting to prevent abuse. Default limits
-are configurable through the configuration file.
-
-## Dependencies
-
-### Build Dependencies
-
-- Compiler (GCC, Clang, or MSVC)
-- Build system (Make, CMake, or Meson)
-- Package manager (pip, npm, or cargo)
-
-### Runtime Dependencies
-
-Runtime dependencies are managed by the upstream project build
-system. Key dependencies include:
-
-- Standard library components
-- Third-party libraries as specified in upstream documentation
-- System libraries required for operation
-
-### Optional Dependencies
-
-Some features may require additional optional dependencies.
-These are documented in the upstream README and can be
-installed separately as needed.
-
-## Configuration
-
-### Configuration File
-
-ELECTRICITYMAPS_CONTRIB uses a configuration file for runtime settings.
-The default location is typically:
-
-- **Linux/macOS:** ~/.config/electricitymaps-contrib/config.yaml
-- **Windows:** %APPDATA%\electricitymaps-contrib\config.yaml
-
-### Configuration Options
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| log_level | string | info | Logging verbosity |
-| output_dir | string | ./output | Output directory |
-| max_workers | int | 4 | Maximum worker threads |
-| timeout | int | 30 | Operation timeout (seconds) |
-
-### Environment Variables
-
-The following environment variables can override configuration:
-
-- **ELECTRICITYMAPS_CONTRIB_LOG_LEVEL** - Override log level
-- **ELECTRICITYMAPS_CONTRIB_CONFIG** - Path to custom config file
-- **ELECTRICITYMAPS_CONTRIB_OUTPUT** - Override output directory
+_View it online [app.electricitymaps.com](https://app.electricitymaps.com), or download the app on [Google Play](https://play.google.com/store/apps/details?id=com.tmrow.electricitymap&utm_source=github) or the [App store](https://itunes.apple.com/us/app/electricity-map/id1224594248&utm_source=github)._
 
 ## Contributing
 
-Contributions to ELECTRICITYMAPS_CONTRIB are welcome. Please follow
-these guidelines:
+Electricity Maps collection of parsers is a community project and we welcome contributions from anyone!
 
-1. **Fork the project** and create a feature branch
-2. **Make your changes** with clear commit messages
-3. **Add tests** for new functionality
-4. **Update documentation** as needed
-5. **Submit a pull request** with a clear description
+We are always looking for help to build parsers for new countries, fix broken parsers, improve accuracy of data sources, discuss new potential data sources, update region capacities, and much more.
 
-### Code Style
+Read our [contribution guidelines](/CONTRIBUTING.md) to get started.
 
-Follow the code style established in the upstream project.
-Use consistent formatting, meaningful variable names, and
-clear comments for complex logic.
+## Community & Support
 
-### Reporting Issues
+Use these channels to be part of the community, ask for help while using Electricity Maps, or just learn more about what's going on:
 
-When reporting issues, please include:
-
-- Operating system and version
-- Project version or commit hash
-- Steps to reproduce the issue
-- Expected vs actual behavior
-- Relevant log output
+- [GitHub Issues](https://github.com/electricitymaps/electricitymaps-contrib/issues): Raise any issues you encounter with the data or bugs you find while using the app.
+- [GitHub Discussions](https://github.com/electricitymaps/electricitymaps-contrib/discussions): Join discussions and share new ideas
 
 ## License
 
-**Overlay license:** Anticommons 0.1.0
-**Upstream license:** MIT
+Upstream terms preserved in `THIRD_PARTY_LICENSES/`. Overlay licensed under Anticommons 0.1.0.
 
-This project is distributed under the MIT license.
-The Anticloud overlay is licensed under Anticommons 0.1.0,
-which ensures that improvements remain available to the
-community while preventing enclosure by any single entity.
+## Verification
 
-See the LICENSE file in the project root for the full
-license text and additional terms.
-
-## Upstream
-
-**SHA-256:** pending resolution
-
-The upstream project is pinned to the above commit hash
-to ensure reproducible builds and verifiable provenance.
-All measurements and benchmarks are taken against this
-specific commit.
-
-## Benchmarks
-
-Measured by the Anticloud assurance suite. Every value below is read from this
-project's `BENCH.json`, produced by a real run — the SHA3-256 of that file is
-`55e87e2a79af73602cf8753983b52ea4cd6ef10d4c1c35eebc7a371896f58416`.
-
-| Framework | Controls | Evidence | Coverage | Result |
-|---|---|---|---|---|
-| OWASP Top 10 for LLM Applications | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| OWASP Top 10 (2021) | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| SOC 2 Type II readiness | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| NIST AI Risk Management Framework | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| NIST SP 800-53 Rev. 5 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| NIST Cybersecurity Framework 2.0 | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| FedRAMP Rev. 5 | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| PCI DSS v4.0.1 | 11 controls mapped | 11 with evidence | 100.0% | PASS |
-| ISO/IEC 27001:2022 | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| MITRE ATT&CK v16 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| ML Technology Readiness Level | TRL 8 | 8/8 criteria | | PASS |
-
-**Overall: 16/16 checks passing.**
-
-See `ISOLATED_LAB_RESULTS/03_Result_Register.md` for the 16-check register with pass condition, command and observed value per check.
-
-Framework folders in `OFFICIAL_BENCHMARKS/` state the control set and the
-evidence source bound to each control. This project does not claim an audit
-opinion, a SOC report, a FedRAMP authorisation or a PCI attestation — those are
-issued by an independent assessor.
-
-## Additional Information
-
-This project is part of the Anticloud ecosystem, providing
-CARBON_CAPTURE functionality with measured performance characteristics.
-
-The overlay adds 12 improvements including:
-
-- Performance optimizations
-- Security hardening
-- Documentation generation
-- Benchmark measurement
-- License compliance
-- Dependency auditing
-- SBOM generation
-- Seal verification
-- Quality gates
-- Contamination detection
-- Press distribution
-- Family background integration
-
-For more information about the Anticloud project, visit
-the main project or contact the maintainers.
-
-## Archives and Permanent Records
-
-| Platform | Identifier | Volume |
-|---|---|---|
-| Harvard Dataverse | DOI 10.7910/DVN/YMJKOG | 145 citable datasets |
-| AIOSS verification kit | DOI 10.7910/DVN/OORKNJ | Offline hash verification |
-| Zenodo (CERN) | — | 146 records, DOI-registered |
-| OSF | — | 144 preregistered records |
-| Figshare | author 20849885 | Research data and figures |
-| Internet Archive | aioss-format, Anticode | Permanent binary specification |
-| ORCID | 0009-0009-2233-6107 | Permanent researcher ID |
-| Kaggle | pax-millennium-20 | Reproducible T4 benchmark run |
-
-
-
-## Press and Independent Publication
-
-The PAX benchmark release was distributed by Newsfile wire to 336 outlets
-(312 Web, 23 Terminal, 1 Application), including Yahoo Finance, The Globe and Mail, Business Insider, National Post, Financial Post, StreetInsider, Digital Journal, Barchart, International Business Times, and fox47 · National Law Review.
-Wire distribution makes the announcement dated, public, and indexed, which
-makes the claim checkable.
-
+Recompute the SHA3-256 of `BENCH.json` and compare to this package’s register. Any drift = invalid package.
