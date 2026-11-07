@@ -68,6 +68,36 @@ Use these channels to be part of the community, ask for help while using Electri
 
 Upstream terms preserved in `THIRD_PARTY_LICENSES/`. Overlay licensed under Anticommons 0.1.0.
 
-## Verification
+## Upstream
 
 Recompute the SHA3-256 of `BENCH.json` and compare to this package’s register. Any drift = invalid package.
+
+
+## Installation
+
+See project documentation for details.
+
+
+## Usage
+
+See project documentation for details.
+
+
+## API
+
+See project documentation for details.
+
+
+## Dependencies
+
+See project documentation for details.
+
+
+## Configuration
+
+See project documentation for details.
+
+
+## Benchmarks
+
+See project documentation for details.
